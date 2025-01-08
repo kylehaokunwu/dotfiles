@@ -46,9 +46,9 @@ esac
 # Enable color support for ls and add handy aliases (macOS version)
 if [ -x /usr/bin/dircolors ]; then
     test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
-    alias ls='ls -G'  # ✅ macOS uses -G instead of --color=auto
-    alias dir='ls -G' # ✅ Mac does not have dir, so use ls -G
-    alias vdir='ls -G' # ✅ Same as above
+    alias ls='ls -G'  
+    alias dir='ls -G' 
+    alias vdir='ls -G'
 
     alias grep='grep --color=always'
     alias fgrep='fgrep --color=always'
